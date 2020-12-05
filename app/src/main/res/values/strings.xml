@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Ebox Saloon App</string>
+    <string name="button_sign_in">Sign in</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_staff_username">Staff Username</string>
+    <string name="text_sign_in_to_continue">Sign in to continue</string>
+    <string name="text_welcome">Welcome to EBOX Saloon</string>
+    <string name="textview_forgot_password">Forgot Password</string>
+    <string name="textView_passwordAssist">Please contact EBOX Salon. The administrator will reset the password.</string>
+    <string name="button_contact_now">Contact Now</string>
+    <string name="admin_phoneNumber">012-4839793</string>
+    <string name="textview_profile">Profile</string>
+    <string name="textview_jobs">Jobs</string>
+    <string name="textview_rating_review"><![CDATA[Rating & Review]]></string>
+    <string name="textview_working_schedule">Working Schedule</string>
+    <string name="textview_appointment_history">Appointment History</string>
+    <string name="textview_logout">Logout</string>
+    <string name="toolbar_textView_home">Home</string>
+
+    <string name="pref_file">com.example.preference_file</string>
+    <string name="pref_login_status">com.example.preference_login</string>
+    <string name="pref_user_name">com.example.preference_user_name</string>
+    <string name="textView_signing_in">Signing in..</string>
+    <string name="textView_identify">Are you a...</string>
+    <string name="btn_customer">Customer</string>
+    <string name="btn_staff">Staff</string>
+    <string name="textView_or">Or</string>
+    <string name="hint_username">Username</string>
+    <string name="button_staff_sign_in">staff Sign In</string>
+    <string name="button_new_user_sign_up_now">New User? Sign Up Now</string>
+    <string name="button_sign_up">Sign Up</string>
+    <string name="textView_already_a_user">Already a user?</string>
+    <string name="textView_sign_in">Sign in</string>
+    <string name="textView_let_s_get_started">Let\'s Get Started</string>
+    <string name="textView_create_a_new_account">Create a new account</string>
+    <string name="textView_please_wait">Please wait..</string>
+    <string name="checkbox_remember_me">Remember Me</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_customer_home">CustomerHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="button_book_a_service">Book a service</string>
+    <string name="title_activity_staff_navigation_map">Map</string>
+
+    <string name="button_navigate">Navigate</string>
+    <string name="title_activity_staff_route_history">Map</string>
+    <string name="title_activity_staff_view_service_location">Map</string>
+    <string name="button_view_on_map">View on Map</string>
+
+    <string name="location_permission_denied">Location permissions denied,
+        please enable the permissions to use this app.
+    </string>
+    <string name="address_text">"Address: %1$s \n Timestamp: %2$tr"</string>
+    <string name="address_text1">"%1$s"</string>
+    <string name="no_location">No location available</string>
+    <string name="no_address_found">No address found</string>
+    <string name="loading">Loading…</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="invalid_lat_long_used">Invalid coordinates used</string>
+    <string name="start_tracking_location">Start tracking location</string>
+    <string name="stop_tracking_location">Stop tracking location</string>
+    <string name="textview_hint">Press the button to start tracking your location.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="api_key">ENTER_YOUR_API_KEY_HERE</string>
+</resources>

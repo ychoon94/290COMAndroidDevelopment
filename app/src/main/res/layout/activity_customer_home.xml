@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.customer.CustomerHomeActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:background="#ffffff"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"
+                    android:onClick="launchBookService"
+                    android:background="#81f2ff"
+                    android:text="Book Service" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"
+                    android:onClick="launchCheckAppointment"
+                    android:background="#40bfff"
+                    android:text="Check Appointment" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:onClick="launchCustomerProfile"
+                    android:background="#80ffb0"
+                    android:text="Profile" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_margin="16dp"
+                    android:onClick="Logout"
+                    android:background="#ff091e"
+                    android:text="Logout" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

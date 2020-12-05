@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.staff.StaffAppointmentDetail">
+
+        <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="30dp"
+            android:text="date"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_customerphone" />
+
+        <TextView
+            android:id="@+id/textView_customername"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="customer name"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_servicetype"/>
+
+        <TextView
+            android:id="@+id/textView_customerphone"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="30dp"
+            android:text="customer phone"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_customername"/>
+
+        <TextView
+            android:id="@+id/textView_status"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="28dp"
+            android:text="completion status"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_address" />
+
+        <TextView
+            android:id="@+id/textView_servicetype"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="96dp"
+            android:text="service type"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_address"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:layout_marginTop="28dp"
+            android:text="address"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_time" />
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="28dp"
+            android:text="time"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_date" />
+
+        <Button
+            android:id="@+id/button_ViewStaffLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/button_view_on_map"
+            android:visibility="visible"
+            android:onClick="launchNavigationToCustomerLocation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_status" />
+
+        <Button
+            android:id="@+id/call_servicestaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark service completion"
+            android:onClick="serviceCompleted"
+            app:layout_constraintBottom_toTopOf="@+id/button_ViewStaffLocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_status"
+            app:layout_constraintVertical_bias="0.483" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

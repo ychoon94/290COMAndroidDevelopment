@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context=".activities.ChooseUserActivity">
+
+        <ImageView
+            android:id="@+id/eboxsplashlogo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="180dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/eboxsalonlogo" />
+
+        <TextView
+            android:id="@+id/textView_identifyUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/textView_identify"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_welcome" />
+
+        <Button
+            android:id="@+id/button_client"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="44dp"
+            android:background="#40bfff"
+            android:text="@string/btn_customer"
+            android:textColor="#FFFFFF"
+            android:onClick="launchCustomerLoginPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_identifyUser" />
+
+        <Button
+            android:id="@+id/button_staff"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="28dp"
+            android:background="#ef6a62"
+            android:text="@string/btn_staff"
+            android:textColor="#FFFFFF"
+            android:onClick="launchStaffLoginPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView_welcome"
+            android:layout_width="205dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_welcome"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eboxsplashlogo" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/textView_or"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_client" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

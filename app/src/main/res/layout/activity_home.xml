@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.staff.StaffHomeActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:background="#ffffff"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toolbar_textView_home"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_outer"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="1dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_inner_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icon_profile"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    app:srcCompat="@drawable/user" />
+
+                <ImageView
+                    android:id="@+id/icon_jobs"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    app:srcCompat="@drawable/job_offer" />
+
+                <ImageView
+                    android:id="@+id/icon_ratins"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    app:srcCompat="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/icon_sched"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    app:srcCompat="@drawable/calendar" />
+
+
+                <ImageView
+                    android:id="@+id/icon_logout"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    app:srcCompat="@drawable/outline_logout_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayou_inner_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="launchProfileActivity"
+                    android:text="@string/textview_profile"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_jobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="launchJobActivity"
+                    android:text="@string/textview_jobs"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="LaunchRatingActivity"
+                    android:text="@string/textview_rating_review"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_sched"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="LaunchScheduleActivity"
+                    android:text="@string/textview_working_schedule"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:onClick="sessionLogout"
+                    android:text="@string/textview_logout"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textwelcomeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.883" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
